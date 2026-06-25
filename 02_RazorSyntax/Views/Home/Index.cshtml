@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* @model List<_02_RazorSyntax.Models.Product> *@
+
+
+@using _02_RazorSyntax.Models
+@model List<Product>
+
+@{
+    //Razor Syntax bize html kodları içerisinde C# komutları yazmamızı sağlar.
+    int sayi = 5;
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <h1>@sayi</h1>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="card" style="width: 18rem; margin:10px">
+                <img src="~/images/@item.ImageUrl" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">@item.Price ₺</p>
+                    <a href="#" class="btn btn-primary">Sepete Ekle</a>
+                </div>
+            </div>
+        }
+    </div>
+  
+    <a href="/Home/ProductsByCategory/1">1. Kategori</a><br />
+    <a href="/Home/ProductsByCategory/2">2. Kategori</a><br />
+    <a href="/Home/ProductsByCategory/3">3. Kategori</a><br />
+    <a href="/Home/ProductsByCategory/4">4. Kategori</a><br />
+    <a href="/Home/ProductsByCategory/5">5. Kategori</a>
+
+</div>

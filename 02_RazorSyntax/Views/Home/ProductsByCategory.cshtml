@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "ProductsByCategory";
+}
+@using _02_RazorSyntax.Models
+@model List<Product>
+
+
+<h1>ProductsByCategory</h1>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="card" style="width: 18rem; margin:10px">
+            <img src="~/images/@item.ImageUrl" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+                <p class="card-text">@item.Price ₺</p>
+                <a href="#" class="btn btn-primary">Sepete Ekle</a>
+            </div>
+        </div>
+    }
+</div>
