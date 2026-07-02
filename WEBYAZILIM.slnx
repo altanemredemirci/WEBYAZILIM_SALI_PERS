@@ -1,4 +1,9 @@
 <Solution>
   <Project Path="01_MVC/01_MVC.csproj" />
   <Project Path="02_RazorSyntax/02_RazorSyntax.csproj" />
+  <Project Path="03_ControllerToView/03_ControllerToView.csproj" Id="09973ec9-796d-4050-8044-ee40970f4e30" />
+  <Project Path="04_ViewToController/04_ViewToController.csproj" Id="be63d55b-5a71-4d9e-985f-7558d13b38cf" />
+  <Project Path="05_LayoutPage/05_LayoutPage.csproj" Id="1f999c22-95c3-4c33-a632-99bf6b11d11e" />
+  <Project Path="05_LayoutPage_2/05_LayoutPage_2.csproj" Id="3127756f-e02e-430e-8a6c-0df49b269579" />
+  <Project Path="05_LayoutPage_3/05_LayoutPage_3.csproj" Id="352f6422-8c5e-44ed-b92a-a4e2d94dd7c9" />
 </Solution>

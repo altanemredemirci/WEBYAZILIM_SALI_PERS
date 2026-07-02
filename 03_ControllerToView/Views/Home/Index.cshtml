@@ -1,0 +1,16 @@
+﻿
+@model Product
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Name</h1>
+    <h1 class="display-4">@Model.Price ₺</h1>
+    <h1 class="display-4">@Model.Stock</h1>
+    <h1 class="display-4"><img src="/images/@Model.ImageUrl" /></h1>
+   @* <h1>@ViewBag.message</h1> *@
+   @* <h1>@ViewData["mesaj"]</h1> *@
+   @* <h1>@TempData["adsoyad"]</h1> *@
+   <a href="/Home/About">Hakkımızda</a>
+</div>
