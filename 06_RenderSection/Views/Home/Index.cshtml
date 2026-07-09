@@ -1,0 +1,173 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section hero{
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Hayalinizdeki Evi ve Güvenilir Acentayı Bulun</h1>
+            <p>Binlerce güncel ilan ve onaylı gayrimenkul acentası tek platformda.</p>
+
+            <form class="search-box">
+                <div class="search-group">
+                    <label>İl / İlçe</label>
+                    <input type="text" placeholder="Örn: Kadıköy, İstanbul">
+                </div>
+                <div class="search-group">
+                    <label>İlan Tipi</label>
+                    <select>
+                        <option>Satılık</option>
+                        <option>Kiralık</option>
+                    </select>
+                </div>
+                <div class="search-group">
+                    <label>Acenta</label>
+                    <select>
+                        <option value="">Tüm Acentalar</option>
+                        <option>Zirve Gayrimenkul</option>
+                        <option>Prestij Emlak</option>
+                        <option>Güven Yaşam</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i> Ara</button>
+            </form>
+        </div>
+    </section>
+}
+
+<section class="section container">
+    <div class="section-header">
+        <div>
+            <h2>Onaylı Acentalarımız</h2>
+            <p>Bölgenizdeki en çok ilan yayınlayan güvenilir iş ortaklarımız</p>
+        </div>
+        <a href="#" class="view-all">Tüm Acentalar <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="agencies-grid">
+        <div class="agency-card">
+            <div class="agency-logo">
+                <i class="fa-solid fa-building-shield"></i>
+            </div>
+            <div class="agency-info">
+                <h3>Zirve Gayrimenkul</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Kadıköy, İstanbul</p>
+                <span class="badge">42 İlan</span>
+            </div>
+            <a href="#" class="btn btn-sm">İlanları Gör</a>
+        </div>
+
+        <div class="agency-card">
+            <div class="agency-logo">
+                <i class="fa-solid fa-house-flag"></i>
+            </div>
+            <div class="agency-info">
+                <h3>Prestij Emlak & Danışmanlık</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Beşiktaş, İstanbul</p>
+                <span class="badge">28 İlan</span>
+            </div>
+            <a href="#" class="btn btn-sm">İlanları Gör</a>
+        </div>
+
+        <div class="agency-card">
+            <div class="agency-logo">
+                <i class="fa-solid fa-city"></i>
+            </div>
+            <div class="agency-info">
+                <h3>Güven Yaşam Gayrimenkul</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Çankaya, Ankara</p>
+                <span class="badge">15 İlan</span>
+            </div>
+            <a href="#" class="btn btn-sm">İlanları Gör</a>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container">
+        <div class="section-header">
+            <div>
+                <h2>Güncel İlanlar</h2>
+                <p>Acentalar tarafından yeni eklenen gayrimenkuller</p>
+            </div>
+            <a href="#" class="view-all">Tüm İlanlar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="listings-grid">
+            <div class="listing-card">
+                <div class="listing-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&q=80" alt="Lüks Villa">
+                    <span class="tag tag-for-sale">Satılık</span>
+                    <div class="price">8.500.000 ₺</div>
+                </div>
+                <div class="listing-body">
+                    <div class="listing-agency">
+                        <i class="fa-solid fa-building-user"></i> Zirve Gayrimenkul
+                    </div>
+                    <h3 class="listing-title"><a href="#">Moda Sahil Yakını 4+1 Lüks Daire</a></h3>
+                    <p class="listing-location"><i class="fa-solid fa-location-dot"></i> Kadıköy, İstanbul</p>
+
+                    <div class="listing-features">
+                        <span><i class="fa-solid fa-bed"></i> 4+1</span>
+                        <span><i class="fa-solid fa-bath"></i> 2 Banyo</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 185 m²</span>
+                    </div>
+                </div>
+                <div class="listing-footer">
+                    <span class="date"><i class="fa-regular fa-clock"></i> Bugün eklendi</span>
+                    <a href="#" class="btn btn-outline btn-sm">Detaylar</a>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <div class="listing-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=600&q=80" alt="Modern Daire">
+                    <span class="tag tag-for-rent">Kiralık</span>
+                    <div class="price">45.000 ₺ / ay</div>
+                </div>
+                <div class="listing-body">
+                    <div class="listing-agency">
+                        <i class="fa-solid fa-building-user"></i> Prestij Emlak
+                    </div>
+                    <h3 class="listing-title"><a href="#">Levent Plaza Yakını Eşyalı 2+1 Rezidans</a></h3>
+                    <p class="listing-location"><i class="fa-solid fa-location-dot"></i> Şişli, İstanbul</p>
+
+                    <div class="listing-features">
+                        <span><i class="fa-solid fa-bed"></i> 2+1</span>
+                        <span><i class="fa-solid fa-bath"></i> 1 Banyo</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 95 m²</span>
+                    </div>
+                </div>
+                <div class="listing-footer">
+                    <span class="date"><i class="fa-regular fa-clock"></i> Dün eklendi</span>
+                    <a href="#" class="btn btn-outline btn-sm">Detaylar</a>
+                </div>
+            </div>
+
+            <div class="listing-card">
+                <div class="listing-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Müstakil Ev">
+                    <span class="tag tag-for-sale">Satılık</span>
+                    <div class="price">14.200.000 ₺</div>
+                </div>
+                <div class="listing-body">
+                    <div class="listing-agency">
+                        <i class="fa-solid fa-building-user"></i> Güven Yaşam
+                    </div>
+                    <h3 class="listing-title"><a href="#">İncek'te Havuzlu Müstakil Villa</a></h3>
+                    <p class="listing-location"><i class="fa-solid fa-location-dot"></i> Gölbaşı, Ankara</p>
+
+                    <div class="listing-features">
+                        <span><i class="fa-solid fa-bed"></i> 5+2</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Banyo</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 320 m²</span>
+                    </div>
+                </div>
+                <div class="listing-footer">
+                    <span class="date"><i class="fa-regular fa-clock"></i> 3 gün önce</span>
+                    <a href="#" class="btn btn-outline btn-sm">Detaylar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
