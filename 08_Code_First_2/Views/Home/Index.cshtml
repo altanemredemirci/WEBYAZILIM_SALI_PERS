@@ -1,0 +1,25 @@
+﻿@* @model List<Ogrenci> *@
+
+@model List<Sinif>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+   @*  @foreach (Ogrenci item in Model)
+    {
+        <h2>@(item.Ad+" "+item.Soyad+" "+item.Sinif.Ad)</h2>
+    } *@
+
+    @foreach (Sinif item in Model)
+    {
+        <h2>@item.Ad</h2>
+        foreach (Ogrenci ogr in item.Ogrenciler)
+        {
+            <h2>@ogr.Ad</h2>
+        }
+    }
+</div>
