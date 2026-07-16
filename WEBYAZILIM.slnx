@@ -10,4 +10,5 @@
   <Project Path="07_Fluent_Validation/07_Fluent_Validation.csproj" Id="9a171024-27d2-42f3-823c-0cfed68fb387" />
   <Project Path="08_Code_First/08_Code_First.csproj" Id="48a6099e-d41e-4446-b8b5-cfa41183d50e" />
   <Project Path="08_Code_First_2/08_Code_First_2.csproj" Id="91a640ca-c4a7-4af3-992a-5a161b888045" />
+  <Project Path="09_Dependency_Injection/09_Dependency_Injection.csproj" Id="c70d5921-77ca-4fac-8b0f-306bb3367046" />
 </Solution>
